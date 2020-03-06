@@ -1,5 +1,6 @@
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
+import shebang from 'rollup-plugin-add-shebang';
 import { terser } from 'rollup-plugin-terser';
 import typescript from 'rollup-plugin-typescript2';
 
@@ -21,5 +22,8 @@ export default {
         resolve(),
         typescript(),
         terser(),
+        shebang({
+            include: 'dist/index.js'
+        }),
     ],
 }
