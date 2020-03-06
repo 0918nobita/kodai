@@ -21,5 +21,12 @@
     "rollup-plugin-terser": "^5.2.0",
     "rollup-plugin-typescript2": "^0.26.0",
     "typescript": "^3.8.3"
-  }
+  },
+  "files": [
+    "dist/index.js",
+    "package.json",
+    "yarn.lock",
+    "README.md",
+    "LICENSE"
+  ]
 }
