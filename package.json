@@ -2,7 +2,9 @@
   "name": "kodai",
   "version": "1.0.0",
   "description": "Kodai CLI",
-  "main": "dist/index.js",
+  "bin": {
+    "kodai": "dist/index.js"
+  },
   "repository": "git@github.com:0918nobita/kodai.git",
   "author": "0918nobita <nobita.0918@gmail.com>",
   "license": "MIT",
