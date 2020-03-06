@@ -1,4 +1,3 @@
-import minimist from 'minimist';
 import open from 'open';
 
 const title =
@@ -10,29 +9,29 @@ const title =
 
 const version = '1.0.3';
 
-const help = (): void => {
-    console.log(title);
-    console.log(`kodai CLI version ${version} , (C) 2020 Kodai Matsumoto\n`);
-    console.log(`Usage:
+function help(): void {
+    console.log(`${title}
+kodai CLI version ${version} , (C) 2020 Kodai Matsumoto
 
-        kodai <command>
-    `);
-    console.log(`The commands are:
+Usage:
 
-        github     show github account
-        twitter    show twitter account
-        version    print version
-    `);
-};
+    kodai <command>
 
-const argv = minimist(process.argv.slice(2));
+The commands are:
 
-if (argv._.length === 0) {
+    github     show github account
+    twitter    show twitter account
+`);
+}
+
+const argv = process.argv.slice(2);
+
+if (argv.length === 0) {
     help();
     process.exit(0);
 }
 
-switch (argv._[0].toLocaleLowerCase()) {
+switch (argv[0].toLocaleLowerCase()) {
     case 'help':
         help();
         process.exit(0);
@@ -52,6 +51,6 @@ switch (argv._[0].toLocaleLowerCase()) {
         break;
 
     default:
-        console.log(`kodai ${argv._[0]}: unknown command\nRun 'kodai help' for usage.`);
+        console.log(`kodai ${argv[0]}: unknown command\nRun 'kodai help' for usage.`);
         process.exit(1);
 }
