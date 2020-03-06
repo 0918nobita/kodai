@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "prepare": "rollup -c",
     "build": "rollup -c"
   },
   "devDependencies": {
