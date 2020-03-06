@@ -51,10 +51,6 @@ switch (argv._[0].toLocaleLowerCase()) {
         })
         break;
 
-    case 'version':
-        console.log(`version ${version}`);
-        process.exit(0);
-
     default:
         console.log(`kodai ${argv._[0]}: unknown command\nRun 'kodai help' for usage.`);
         process.exit(1);
