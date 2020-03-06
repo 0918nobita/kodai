@@ -1,6 +1,6 @@
 {
   "name": "kodai",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Kodai CLI",
   "bin": {
     "kodai": "dist/index.js"

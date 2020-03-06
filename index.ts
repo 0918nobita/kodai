@@ -8,7 +8,7 @@ const title =
     ' / /| |/ /_/ // /_/ // /_/ // /  \n' +
     '/_/ |_|\\____/ \\__,_/ \\__,_//_/\n';
 
-const version = '1.0.1';
+const version = '1.0.3';
 
 const help = (): void => {
     console.log(title);
