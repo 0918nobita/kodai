@@ -1,0 +1,5 @@
+# Kodai CLI
+
+```
+npx kodai
+```
